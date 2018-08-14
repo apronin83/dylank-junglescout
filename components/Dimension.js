@@ -1,8 +1,8 @@
 import React from 'react';
 
 const UNITS = {
-  inches: `'`,
-  feet: `"`,
+  inches: `"`,
+  feet: `'`,
   meters: 'm',
 };
 

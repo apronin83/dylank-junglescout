@@ -16,11 +16,11 @@ describe('<Dimension/>', () => {
   it('displays dimensions with unprefixed units correctly', async () => {
     const { container } = render(<Dimension dimension={createAmazonDimension(3, 'inches')} />);
 
-    expect(container.textContent).toEqual("3'");
+    expect(container.textContent).toEqual('3"');
   });
 
   it('displays imperial subdimensions correctly', async () => {
-    const { container } = render(<Dimension dimension={createAmazonDimension(2.5, 'Thousandth inches')} />);
+    const { container } = render(<Dimension dimension={createAmazonDimension(2.5, 'Thousandth feet')} />);
 
     expect(container.textContent).toEqual("0.0025'");
   });
