@@ -27,6 +27,8 @@ describe('<Product/>', () => {
   });
 
   it('displays product dimensions', () => {
-    const { getByLabelText } = render(<Product product={testProduct} />);
+    const { getByText } = render(<Product product={testProduct} />);
+    const dimensionsLabel = getByText('Dimensions');
+    expect(dimensionsLabel.nextSibling).toHaveTextContent('7.87"x4.33"x0.39"');
   });
 });
