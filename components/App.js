@@ -5,7 +5,7 @@ import Product from './Product';
 
 export default class App extends React.Component {
   state = {
-    productAsin: 'B002QYW8LW',
+    productAsin: '',
     product: null,
     loading: false,
     error: null,
